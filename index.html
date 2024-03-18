@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safe Title</title>
+  <script type="text/javascript">
+    setTimeout(function() {
+      document.title = "<script>alert('XSS Test'); </script>";
+    }, 1000);
+  </script>
+</head>
+<body>
+  <h1>XSS Test Page</h1>
+  </body>
+</html>
